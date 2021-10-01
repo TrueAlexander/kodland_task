@@ -1,0 +1,79 @@
+//reset default CSS
+
+@import "nullstyle.scss";
+
+//import fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;900&display=swap');
+//font-family: 'Roboto', sans-serif;
+
+.container {
+  margin: 0 auto;
+}
+
+.boots {
+  margin-top: 50px;
+  font-family:'Roboto', sans-serif;
+  color: #333333;
+
+		// .boots__row
+
+		&__row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+		}
+
+		// .boots__item
+
+		&__item {
+      margin: 0 25px;
+		}
+}
+.item {
+  flex: 0 0 300px;
+  border: 2px solid #e2e2e2;
+  position: relative;
+  margin-bottom: 35px;
+
+		// .item__img
+
+		&__img {
+      width: 100%;
+      display: block;
+		}
+
+		// .item__title
+
+		&__title {
+      font-weight: 900;
+      font-size: 20px;
+      margin: 30px auto auto 25px;
+		}
+
+		// .item__description
+
+		&__description {
+      font-size: 15px;
+      margin: 15px auto 15px 25px;
+      line-height: 20px;
+      width: 180px;
+      font-weight: 500;
+		}
+
+		// .item__price
+
+		&__price {
+      font-weight: 900;
+      font-size: 35px;
+      margin: auto auto 30px 25px;
+		}
+
+		// .item__cart
+
+		&__cart {
+      width: 50px;
+      position: absolute;
+      right: 30px;
+      bottom: 30px;
+		}
+}
